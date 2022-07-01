@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2AC0D5D286066F40042F82A /* Core.default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2AC0D5B286066F40042F82A /* Core.default.xcconfig */; };
-		A2AC0D5E286066F40042F82A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AC0D5C286066F40042F82A /* Info.plist */; };
 		A2AC0DAE286066FC0042F82A /* JWTClaimsSetVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = A2AC0D61286066FC0042F82A /* JWTClaimsSetVerifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2AC0DAF286066FC0042F82A /* JWTClaimsSetSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2AC0D62286066FC0042F82A /* JWTClaimsSetSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2AC0DB0286066FC0042F82A /* JWTClaimsSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC0D63286066FC0042F82A /* JWTClaimsSet.m */; };
@@ -526,8 +524,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AC0D5E286066F40042F82A /* Info.plist in Resources */,
-				A2AC0D5D286066F40042F82A /* Core.default.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

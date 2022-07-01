@@ -75,7 +75,6 @@
 		A2AC0D52286065B00042F82A /* JWTCoding+ResultTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC0D10286065B00042F82A /* JWTCoding+ResultTypes.m */; };
 		A2AC0D53286065B00042F82A /* JWTCoding+VersionOne.h in Headers */ = {isa = PBXBuildFile; fileRef = A2AC0D11286065B00042F82A /* JWTCoding+VersionOne.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2AC0D54286065B00042F82A /* JWTBuilder+FluentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC0D12286065B00042F82A /* JWTBuilder+FluentStyle.m */; };
-		A2AC0D58286066460042F82A /* Core.default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2AC0D56286066460042F82A /* Core.default.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -525,7 +524,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AC0D58286066460042F82A /* Core.default.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
