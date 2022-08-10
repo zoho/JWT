@@ -75,6 +75,7 @@
 		A2ACB8D82872DCD7004C2E7F /* JWTBuilder+FluentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACB8962872DCD7004C2E7F /* JWTBuilder+FluentStyle.m */; };
 		A2ACB8E22872DD26004C2E7F /* MF_Base64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = A2ACB8E02872DD26004C2E7F /* MF_Base64Additions.h */; };
 		A2ACB8E32872DD26004C2E7F /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACB8E12872DD26004C2E7F /* MF_Base64Additions.m */; };
+		A2DA86AA28A3416C0093EBDF /* JWT-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DA86A928A3416C0093EBDF /* JWT-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +149,7 @@
 		A2ACB8962872DCD7004C2E7F /* JWTBuilder+FluentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JWTBuilder+FluentStyle.m"; sourceTree = "<group>"; };
 		A2ACB8E02872DD26004C2E7F /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF_Base64Additions.h; sourceTree = "<group>"; };
 		A2ACB8E12872DD26004C2E7F /* MF_Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF_Base64Additions.m; sourceTree = "<group>"; };
+		A2DA86A928A3416C0093EBDF /* JWT-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JWT-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		A2ACB8342872DC96004C2E7F = {
 			isa = PBXGroup;
 			children = (
+				A2DA86A928A3416C0093EBDF /* JWT-Info.plist */,
 				A2ACB8DF2872DD26004C2E7F /* Base64 */,
 				A2ACB8482872DCD7004C2E7F /* Core */,
 				A2ACB83F2872DC96004C2E7F /* Products */,
@@ -455,6 +458,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DA86AA28A3416C0093EBDF /* JWT-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,7 +563,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -614,7 +618,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -625,12 +629,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "JWT-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -655,12 +660,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "JWT-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
