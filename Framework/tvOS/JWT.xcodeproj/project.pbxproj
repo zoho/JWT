@@ -75,7 +75,6 @@
 		A2ACB8D82872DCD7004C2E7F /* JWTBuilder+FluentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACB8962872DCD7004C2E7F /* JWTBuilder+FluentStyle.m */; };
 		A2ACB8E22872DD26004C2E7F /* MF_Base64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = A2ACB8E02872DD26004C2E7F /* MF_Base64Additions.h */; };
 		A2ACB8E32872DD26004C2E7F /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ACB8E12872DD26004C2E7F /* MF_Base64Additions.m */; };
-		A2DA86AC28A341CC0093EBDF /* JWT-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2DA86AB28A341CC0093EBDF /* JWT-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -458,7 +457,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DA86AC28A341CC0093EBDF /* JWT-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
