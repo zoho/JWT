@@ -626,6 +626,12 @@
 		A2ACB8462872DC96004C2E7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"arm64,",
+					"arm64e,",
+					"i386,",
+					x86_64,
+				);
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEFINES_MODULE = YES;
@@ -657,6 +663,12 @@
 		A2ACB8472872DC96004C2E7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"arm64,",
+					"arm64e,",
+					"i386,",
+					x86_64,
+				);
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEFINES_MODULE = YES;
