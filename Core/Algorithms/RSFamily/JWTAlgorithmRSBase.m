@@ -214,7 +214,8 @@ NSString *const JWTAlgorithmNameRS512 = @"RS512";
     const void* signedHashBytes = [signature bytes];
 
     size_t hashBytesSize = self.ccSHANumberDigestLength;
-    uint8_t* hashBytes = malloc(hashBytesSize);
+//    uint8_t* hashBytes = malloc(hashBytesSize);
+    uint8_t* hashBytes = calloc(hashBytesSize, sizeof(uint8_t));
     if (![self CC_SHANumberWithData:[plainData bytes] withLength:(CC_LONG)[plainData length] withHashBytes:hashBytes]) {
         if (error) {
             *error = [JWTAlgorithmRSFamilyErrorDescription errorWithCode:JWTAlgorithmRSFamilyErrorIncorrectHashComputation];
@@ -234,11 +235,13 @@ NSString *const JWTAlgorithmNameRS512 = @"RS512";
 
 - (NSData *)signData:(NSData *)plainData key:(SecKeyRef)privateKey error:(NSError *__autoreleasing *)error {
     size_t signedHashBytesSize = SecKeyGetBlockSize(privateKey);
-    uint8_t* signedHashBytes = malloc(signedHashBytesSize);
+//    uint8_t* signedHashBytes = malloc(signedHashBytesSize);
+    uint8_t* signedHashBytes = calloc(1, signedHashBytesSize);
     memset(signedHashBytes, 0x0, signedHashBytesSize);
 
     size_t hashBytesSize = self.ccSHANumberDigestLength;
-    uint8_t* hashBytes = malloc(hashBytesSize);
+//    uint8_t* hashBytes = malloc(hashBytesSize);
+    uint8_t* hashBytes = calloc(1, hashBytesSize);
 
     // ([plainData bytes], (CC_LONG)[plainData length], hashBytes)
     unsigned char *str = [self CC_SHANumberWithData:[plainData bytes] withLength:(CC_LONG)[plainData length] withHashBytes:hashBytes];
@@ -349,7 +352,8 @@ NSString *const JWTAlgorithmNameRS512 = @"RS512";
     //const void* signedHashBytes = [signature bytes];
 
     size_t hashBytesSize = self.ccSHANumberDigestLength;
-    uint8_t* hashBytes = malloc(hashBytesSize);
+//    uint8_t* hashBytes = malloc(hashBytesSize);
+    uint8_t* hashBytes = calloc(1, hashBytesSize);
     Byte bitsPerByte = /*???*/sizeof(Byte) * CHAR_BIT;
 //    NSNumber *plainDataLength = @((CC_LONG)[plainData length]);
     
@@ -413,7 +417,8 @@ NSString *const JWTAlgorithmNameRS512 = @"RS512";
     //memset(signedHashBytes, 0x0, signedHashBytesSize);
 
     size_t hashBytesSize = self.ccSHANumberDigestLength;
-    uint8_t* hashBytes = malloc(hashBytesSize);
+//    uint8_t* hashBytes = malloc(hashBytesSize);
+    uint8_t* hashBytes = calloc(1, hashBytesSize);
 
     /**
      for sha256

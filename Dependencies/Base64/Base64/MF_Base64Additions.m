@@ -76,7 +76,8 @@
         
         unsigned char decodingBlock[4];
         
-        decodedBytes = malloc(expectedDataLength);
+//        decodedBytes = malloc_(expectedDataLength);
+        decodedBytes = calloc(expectedDataLength, sizeof(unsigned char));
         if( decodedBytes != NULL ) {
             
             NSUInteger i = 0;
@@ -157,7 +158,8 @@
         if( padding > 0 ) encodedBlocks++;
         NSUInteger encodedLength = encodedBlocks * 4;
         
-        encodingBytes = malloc(encodedLength);
+//        encodingBytes = malloc_(encodedLength);
+        encodingBytes = calloc(encodedLength, sizeof(unsigned char));
         if( encodingBytes != NULL ) {
             NSUInteger rawBytesToProcess = dataLength;
             NSUInteger rawBaseIndex = 0;

@@ -30,7 +30,8 @@ NSString *const JWTAlgorithmNameHS512 = @"HS512";
 - (NSData *)signHash:(NSData *)hash key:(NSData *)key error:(NSError *__autoreleasing *)error {
     size_t amount = self.ccSHANumberDigestLength;
     size_t fullSize = amount * sizeof(unsigned char);
-    unsigned char* cHMAC = malloc(fullSize);
+//    unsigned char* cHMAC = malloc_(fullSize);
+    unsigned char* cHMAC = calloc(amount, sizeof(unsigned char));
     CCHmacAlgorithm ccAlg = self.ccHmacAlgSHANumber;
     
     CCHmac(ccAlg, key.bytes, key.length, hash.bytes, hash.length, cHMAC);
